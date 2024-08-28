@@ -1,11 +1,13 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 int main() {
-    char name[50];
-    wchar_t wname[50];
-    char16_t c16name[50];
-    char32_t c32name[50];
-    cout << sizeof(c32name) << endl;
+    int arr[10][10]{0};
+    for(int i = 0; i < 10; i++) {
+        for(int j = 0; j < 10; j++) {
+            cout << arr[i][j] << " ";
+        }
+    }
     return 0;
 }
