@@ -5,8 +5,8 @@
 using namespace std;
 int main() {
 
-    double one, two;
-    cin >> one >> two;
+    double one = 12.0, two = 11.9999999999999999;
+    //cin >> one >> two;
     cout << (one == two);
     return 0;
 }
