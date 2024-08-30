@@ -1,20 +1,12 @@
 #include <iostream>
 #include <vector>
+#include <string>
 
 using namespace std;
 int main() {
 
-    int counter{10};
-    int result{0};
-
-    cout << "Counter: " << counter << endl;
-
-    counter = counter + 1;
-    cout << "Counter: " << counter << endl;
-
-    cout << "Counter: " << counter++ << endl;
-
-    result = counter++;
-    cout << "Counter: " << result << endl;
+    double one, two;
+    cin >> one >> two;
+    cout << (one == two);
     return 0;
 }
