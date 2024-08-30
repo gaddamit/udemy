@@ -3,11 +3,18 @@
 
 using namespace std;
 int main() {
-    int arr[10][10]{0};
-    for(int i = 0; i < 10; i++) {
-        for(int j = 0; j < 10; j++) {
-            cout << arr[i][j] << " ";
-        }
-    }
+
+    int counter{10};
+    int result{0};
+
+    cout << "Counter: " << counter << endl;
+
+    counter = counter + 1;
+    cout << "Counter: " << counter << endl;
+
+    cout << "Counter: " << counter++ << endl;
+
+    result = counter++;
+    cout << "Counter: " << result << endl;
     return 0;
 }
