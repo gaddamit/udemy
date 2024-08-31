@@ -5,14 +5,20 @@
 using namespace std;
 int main()
 {
-    int score = 89;
-    if (score > 90)
-        if (score > 95)
-            cout << "A+";
-        else
-            cout << "A";
-    else
-        cout << "B";
+    int scores[]{0,0,0,0};
+    for(auto score : scores)
+    {
+        cout << score << endl;
+    }
 
+    for(auto temp : {1,2,3,4,5})
+    {
+        cout << temp << endl;
+    }
+
+    for(auto c : "This is a test")
+    {
+        cout << c << endl;
+    }
     return 0;
 }
