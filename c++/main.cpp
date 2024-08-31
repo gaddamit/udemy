@@ -3,10 +3,16 @@
 #include <string>
 
 using namespace std;
-int main() {
+int main()
+{
+    int score = 89;
+    if (score > 90)
+        if (score > 95)
+            cout << "A+";
+        else
+            cout << "A";
+    else
+        cout << "B";
 
-    double one = 12.0, two = 11.9999999999999999;
-    //cin >> one >> two;
-    cout << (one == two);
     return 0;
 }
