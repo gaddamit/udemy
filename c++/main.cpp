@@ -5,20 +5,15 @@
 using namespace std;
 int main()
 {
-    int scores[]{0,0,0,0};
-    for(auto score : scores)
-    {
-        cout << score << endl;
-    }
-
-    for(auto temp : {1,2,3,4,5})
-    {
-        cout << temp << endl;
-    }
-
-    for(auto c : "This is a test")
-    {
-        cout << c << endl;
-    }
+    char c = '$';
+    cout << isdigit(c) << endl;
+    cout << isalpha(c) << endl;
+    cout << isalnum(c) << endl;
+    cout << islower(c) << endl;
+    cout << isupper(c) << endl;
+    cout << isprint(c) << endl;
+    cout << ispunct(c) << endl;
+    cout << isspace(c) << endl;
+    cout << isxdigit(c) << endl;
     return 0;
 }
