@@ -3,22 +3,14 @@
 #include <string>
 
 using namespace std;
+void print(int apples = 10);
 int main()
 {
-    string input;
-    getline(cin, input);
-
-    size_t len = input.length();
-
-    string mirror = "";
-    for(size_t i = 0; i <= len; i++)
-    {
-        string temp = input.substr(0, i);
-        string rev(mirror.rbegin(), mirror.rend());
-        string space((len - i), ' ');
-        cout << space << temp << rev << endl;
-
-        mirror = temp;
-   }
+    print(5);
     return 0;
+}
+
+void print(int apples)
+{
+    cout << "I have " << apples << " apples." << endl;
 }
