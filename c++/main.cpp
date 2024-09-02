@@ -5,15 +5,22 @@
 using namespace std;
 int main()
 {
-    char c = '$';
-    cout << isdigit(c) << endl;
-    cout << isalpha(c) << endl;
-    cout << isalnum(c) << endl;
-    cout << islower(c) << endl;
-    cout << isupper(c) << endl;
-    cout << isprint(c) << endl;
-    cout << ispunct(c) << endl;
-    cout << isspace(c) << endl;
-    cout << isxdigit(c) << endl;
+    string input;
+    //input = "ABCD";
+    getline(cin, input);
+    cout << input << endl;
+
+    size_t len = input.length();
+
+    string mirror = "";
+    for(size_t i = 0; i <= len; i++)
+    {
+        string temp = input.substr(0, i);
+
+        string rev(mirror.rbegin(), mirror.rend());
+        string space((len - i), ' ');
+        cout << space << temp << rev << endl;
+        mirror = temp;
+   }
     return 0;
 }
